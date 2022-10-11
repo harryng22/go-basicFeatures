@@ -10,4 +10,5 @@ func main() {
 	fmt.Println("In stock:", inStock)
 	price = 300
 	fmt.Println("Total:", quantity*(price+tax))
+	fmt.Println("Price:", price)
 }
