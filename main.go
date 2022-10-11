@@ -9,5 +9,5 @@ func main() {
 	first++
 
 	fmt.Println("First:", first)
-	fmt.Println("Second:", second)
+	fmt.Println("Second:", *second)
 }
