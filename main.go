@@ -7,6 +7,7 @@ import (
 
 func main() {
 	// fmt.Println("Value:", rand.Int())
-	fmt.Println("Hello, Go")
-	fmt.Println(20 + 30)
+	const price float32 = 275
+	const tax float32 = 27.5
+	fmt.Println(price + tax)
 }
