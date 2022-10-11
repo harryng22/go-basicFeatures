@@ -10,6 +10,7 @@ func main() {
 	*second++
 
 	var myNewPointer *int
+	fmt.Println(myNewPointer)
 	myNewPointer = second
 	*myNewPointer++
 
