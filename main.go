@@ -7,6 +7,7 @@ func main() {
 	second := &first
 
 	first++
+	*second++
 
 	fmt.Println("First:", first)
 	fmt.Println("Second:", *second)
