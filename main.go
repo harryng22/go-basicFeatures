@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	first := 100
-	second := &first
+	var second *int = &first
 
 	first++
 
