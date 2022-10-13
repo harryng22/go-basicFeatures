@@ -7,7 +7,7 @@ func main() {
 
 	allNames := names[1:]
 	someNames := make([]string, 2)
-	someNames = append(someNames, allNames...)
+	copy(someNames, allNames)
 	someNames[1]="Boots"
 
 	fmt.Println(allNames)
