@@ -5,7 +5,8 @@ import "fmt"
 func main() {
 	names := [4]string{"Kayak", "Lifejacket", "Paddle", "Hat"}
 
-	someNames := names[3:3]
+	someNames := names[1:3]
+	someNames = append(someNames, "Gloves", "test")
 	allNames := names[:]
 	names[0] = "Canoe"
 
