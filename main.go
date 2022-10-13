@@ -17,11 +17,14 @@ func main() {
 	names[1] = "LifeJacket"
 	names[2] = "Paddle"
 
-	appendedNames := append(names, "Hat", "Gloves")
-	names[0]="Canoe"
+	moreNames := []string{"Hat", "Gloves"}
+
+	appendedNames := append(names, moreNames...)
+	names[0] = "Canoe"
 
 	fmt.Println(len(names))
 	fmt.Println(cap(names))
 	fmt.Println(names)
 	fmt.Println(appendedNames)
+	fmt.Println(moreNames)
 }
