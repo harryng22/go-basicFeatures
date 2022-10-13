@@ -5,11 +5,10 @@ import "fmt"
 func main() {
 	names := [4]string{"Kayak", "Lifejacket", "Paddle", "Hat"}
 
-	someNames := names[1:3:3]
-	someNames = append(someNames, "Gloves")
-	someNames = append(someNames, "Boots")
-	allNames := names[:]
-	names[0] = "Canoe"
+	allNames := names[1:]
+	someNames := allNames[1:3]
+	allNames = append(allNames, "Gloves")
+	allNames[1] = "Canoe"
 
 	fmt.Println(allNames)
 	fmt.Println(someNames)
