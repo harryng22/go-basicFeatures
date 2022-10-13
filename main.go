@@ -5,14 +5,9 @@ import "fmt"
 func main() {
 	names := [4]string{"Kayak", "Lifejacket", "Paddle", "Hat"}
 
-	allNames := names[1:]
-	someNames := []string{"Boots", "Canoe"}
-	copy(someNames[1:], allNames[2:3])
-
-	fmt.Println(allNames)
-	fmt.Println(someNames)
-	fmt.Println(cap(allNames), len(allNames))
-	fmt.Println(cap(someNames), len(someNames))
+	deleted := append(names[:2], names[3:]...)
+	
+	fmt.Println(deleted)
 
 	// names := make([]string, 3, 6)
 
