@@ -5,9 +5,9 @@ import "fmt"
 func main() {
 	names := []string{"Kayak", "Lifejacket", "Paddle"}
 
-	names = append(names, "Hat", "Gloves")
+	appendedNames := append(names, "Hat", "Gloves")
+	names[0] = "Canoe"
 
-	for index, value := range names {
-		fmt.Println("Index:", index, "Value:", value)
-	}
+	fmt.Println(names)
+	fmt.Println(appendedNames)
 }
