@@ -6,10 +6,8 @@ func main() {
 	names := [4]string{"Kayak", "Lifejacket", "Paddle", "Hat"}
 
 	allNames := names[1:]
-	someNames := allNames[1:3]
-	// allNames = append(allNames, "Gloves")
-	someNames[1]="Boots"
-	allNames[1] = "Canoe"
+	someNames := make([]string, 2)
+	copy(someNames, allNames)
 
 	fmt.Println(allNames)
 	fmt.Println(someNames)
