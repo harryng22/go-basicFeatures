@@ -5,7 +5,10 @@ import "fmt"
 func main() {
 	names := [3]string {"Kayak", "LifeJacket","Paddle"}
 
-	var otherArray [3]string = names
+	otherArray := names
+	
+	names[0]="safd"
 
+	fmt.Println(names)
 	fmt.Println(otherArray)
 }
