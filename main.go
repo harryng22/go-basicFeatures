@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	names := [3]string{"Kayak", "Lifejacket", "Paddle"}
+	names := [4]string{"Kayak", "Lifejacket", "Paddle", "Hat"}
 
 	someNames := names[1:3]
 	allNames := names[:]
