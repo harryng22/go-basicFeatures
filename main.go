@@ -7,12 +7,13 @@ func main() {
 
 	allNames := names[1:]
 	someNames := allNames[1:3]
-	allNames = append(allNames, "Gloves")
+	// allNames = append(allNames, "Gloves")
 	someNames[1]="Boots"
 	allNames[1] = "Canoe"
 
 	fmt.Println(allNames)
 	fmt.Println(someNames)
+	fmt.Println(cap(allNames), len(allNames))
 	fmt.Println(cap(someNames), len(someNames))
 
 	// names := make([]string, 3, 6)
