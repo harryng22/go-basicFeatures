@@ -10,5 +10,5 @@ func main() {
 	names[0]="safd"
 
 	fmt.Println(names)
-	fmt.Println(otherArray)
+	fmt.Println(*otherArray)
 }
