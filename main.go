@@ -8,7 +8,7 @@ func main() {
 	allNames := names[1:]
 	someNames := allNames[1:3]
 	allNames = append(allNames, "Gloves")
-	someNames = append(someNames, "Boots")
+	someNames[1]="Boots"
 	allNames[1] = "Canoe"
 
 	fmt.Println(allNames)
