@@ -11,6 +11,7 @@ func main() {
 
 	fmt.Println(allNames)
 	fmt.Println(someNames)
+	fmt.Println(cap(someNames), len(someNames))
 
 	// names := make([]string, 3, 6)
 
