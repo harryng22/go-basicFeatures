@@ -6,7 +6,7 @@ func main() {
 	names := [4]string{"Kayak", "Lifejacket", "Paddle", "Hat"}
 
 	someNames := names[1:3]
-	someNames = append(someNames, "Gloves", "test")
+	someNames = append(someNames, "Gloves")
 	allNames := names[:]
 	names[0] = "Canoe"
 
