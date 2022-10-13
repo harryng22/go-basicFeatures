@@ -3,17 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	first := 100
-	second := &first
+	var names [5]string
 
-	first++
-	*second++
+	names[0]="Kayak"
+	names[1]="Lifejacket"
+	names[2]="Paddle"
+	names[3]="test"
 
-	var myNewPointer *int
-	fmt.Println(myNewPointer)
-	myNewPointer = second
-	*myNewPointer++
-
-	fmt.Println("First:", first)
-	fmt.Println("Second:", *second)
+	fmt.Println(names)
 }
